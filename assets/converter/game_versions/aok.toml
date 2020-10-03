@@ -1,0 +1,33 @@
+# Header
+# The version of this config file format
+file_version = 1.0
+
+# Game edition info
+game_edition_id = "AOK"
+full_name = "Age of Empires 2: Age of Kings"
+support_status = "nope"
+
+target_modpacks = []
+expansions = []
+
+# Set of files that is unique to this version of the game.
+[[game_file_versions]]
+path = "empires2.exe"
+hash = "5f7ca6c7edeba075c7982714619bc66b"
+file_ver = "2.0a"
+
+[[game_file_versions]]
+path = "data/empires2.dat"
+hash = "89ff818894b69040ebd1657d8029b068"
+file_ver = "2.0a"
+
+# Table with Mediatype as keys and (bool, [str]).
+# bool denotes whether the path is a file that requires
+# extraction. Every str is a path to a file or folder.
+[media_paths]
+datfile = [ "data/empires2.dat" ]
+gamedata = [ "data/gamedata.drs" ]
+graphics = [ "data/graphics.drs" ]
+palettes = [ "data/interfac.drs" ]
+sounds = [ "data/sounds.drs" ]
+terrain = [ "data/terrain.drs" ]

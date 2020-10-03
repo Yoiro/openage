@@ -1,0 +1,35 @@
+# Header
+# The version of this config file format
+file_version = 1.0
+
+# Game edition info
+game_edition_id = "AOC"
+full_name = "Age of Empires 2: The Conqueror's"
+support_status = "yes"
+
+target_modpacks = ["aoe2-base", "aoe2-base-graphics"]
+expansions = []
+
+# Set of files that is unique to this version of the game.
+[[game_file_versions]]
+path = "EMPIRESX.EXE"
+hash = "140bda90145182966acf582b28a4c8ef"
+file_ver = "1.0B"
+
+[[game_file_versions]]
+path = "data2/empires.dat"
+hash = "3e567b2746653107cf80bae18c6962a7"
+file_ver = "1.0B"
+
+# Table with Mediatype as keys and (bool, [str]).
+# bool denotes whether the path is a file that requires
+# extraction. Every str is a path to a file or folder.
+[media_paths]
+datfile = [ "data/empires2_x1_p1.dat" ]
+gamedata = [ "data/gamedata_x1_p1.drs" ]
+graphics = [ "data/graphics.drs" ]
+language = [ "language.dll", "language_x1.dll", "language_x1_p1.dll" ]
+palettes = [ "data/interfac.drs" ]
+sounds = [ "data/sounds.drs", "data/sounds_x1.drs" ]
+terrain = [ "data/terrain.drs" ]
+blend = [ "data/blendomatic.dat" ]

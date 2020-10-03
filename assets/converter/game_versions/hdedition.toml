@@ -1,0 +1,33 @@
+# Header
+# The version of this config file format
+file_version = 1.0
+
+# Game edition info
+game_edition_id = "HDEDITION"
+edition_name = "Age of Empires 2: HD Edition"
+support_status = "yes"
+
+target_modpacks = ["aoe2-base", "aoe2-base-graphics"]
+expansions = []
+
+# Set of files that is unique to this version of the game.
+[[game_file_versions]]
+path = "AoK HD.exe"
+hash = "ca2d6c1e26e8900a9a3140ba2e12e4c9"
+file_ver = "5.8"
+
+[[game_file_versions]]
+path = "resources/_common/dat/empires2_x1_p1.dat"
+hash = "6f5a83789ec3dc0fd92986294d03031f"
+file_ver = "5.8"
+
+# Table with Mediatype as keys and (bool, [str]).
+# bool denotes whether the path is a file that requires
+# extraction. Every str is a path to a file or folder.
+[media_paths]
+datfile = [ "resources/_common/dat/empires2_x1_p1.dat" ]
+gamedata = [ "resources/_common/drs/gamedata_x1/" ]
+graphics = [ "resources/_common/drs/graphics/" ]
+palettes = [ "resources/_common/drs/interface/" ]
+sounds = [ "resources/_common/drs/sounds/" ]
+terrain = [ "resources/_common/drs/terrain/" ]
